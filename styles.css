@@ -1,0 +1,112 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: poppins_f;
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: poppins_f;
+  src: url(./fonts/Poppins-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: poppins_f;
+  src: url(./fonts/Poppins-SemiBold.ttf);
+  font-weight: 600;
+}
+
+/* DEFAULTS */
+
+:root {
+  /* Colors */
+  --primary-bg: #fafbff;
+  --side-bg: #e2ecf9;
+  --secondary-table: #b5b7c0;
+  --secondary-text: #838383;
+  --pagin-brd: #eeeeee;
+  --pagin-bg: #f5f5f5;
+  --pagin-text: #404b52;
+  --menu-text: #9197b3;
+  --menu-focus: #5932ea;
+  --error-brd: #df0404;
+  --error-bg: #ffc5c5;
+  --accent-brd: #00b087;
+  --accent-bg: #16c098;
+  --table-text: #292d32;
+  --dim: #000000;
+  --default: #ffffff;
+
+  /* Fonts */
+
+  --default-family: poppins_f, sans-serif;
+
+  --default-size: 14px;
+  --smaller-size: 12px;
+
+  --default-weight: 500;
+  --thinner-weight: 400;
+  --thicker-weight: 600;
+
+  --default-height: 1.5;
+
+  --default-spacing: -0.01em;
+  --thicker-spacing: 0.01em;
+
+  /* Spacing and Sizing */
+
+  --tiny-size: 4px;
+  --small-size: 8px;
+  --normal-size: 12px;
+  --medium-size: 14px;
+  --large-size: 20px;
+  --extra-large-size: 24px;
+  --huge-size: 40px;
+
+  /* Shadows */
+
+  --default-drop-shadow: drop-shadow(0px 10px 60px rgba(226, 236, 249, 0.5));
+
+  /* Transitions */
+
+  --default-transition: 300ms ease;
+}
+
+body {
+  color: var(--dim);
+  background-color: var(--primary-bg);
+
+  font-family: var(--default-family);
+  font-weight: var(--default-weight);
+  font-size: var(--default-size);
+  letter-spacing: var(--default-spacing);
+  line-height: var(--default-height);
+
+  overflow-x: hidden;
+}
+
+/* UTILITY */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
