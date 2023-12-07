@@ -97,22 +97,7 @@ body {
   /* overflow-x: hidden; */
 }
 
-/* UTILITY */
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+/* ---------- UTILITY -----------*/
 
 .list {
   list-style: none;
@@ -126,6 +111,7 @@ body {
 .container {
   min-height: 100vh;
   display: flex;
+  flex-direction: row;
 }
 
 /* ---------- HEADER -----------*/
@@ -361,7 +347,7 @@ body {
   background-size: cover;
 }
 
-/* ---------- Search -----------*/
+/* ---------- Table -----------*/
 
 .table {
   margin-top: 40px;
@@ -479,4 +465,125 @@ body {
 
 .pagination__range {
   color: var(--dim);
+}
+
+/* ---------- MOBILE VERSION -----------*/
+
+@media screen and (max-width: 480px) {
+  /* ---------- UTILITY -----------*/
+
+  .container {
+    padding-top: var(--normal-size);
+    padding-left: var(--normal-size);
+    padding-right: var(--normal-size);
+    padding-bottom: var(--normal-size);
+    flex-direction: column;
+  }
+
+  /* ---------- HEADER -----------*/
+
+  .header {
+    padding-top: var(--huge-size);
+    padding-left: var(--huge-size);
+    padding-right: var(--huge-size);
+    padding-bottom: var(--huge-size);
+
+    width: 100%;
+
+    background-color: var(--default);
+    filter: var(--default-drop-shadow);
+  }
+
+  /* ---------- Navbar ------------*/
+
+  .nav {
+    margin-top: var(--huge-size);
+  }
+
+  .nav__btn-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav__btn {
+    padding-right: 11px;
+    width: auto;
+  }
+
+  .nav__btn > span {
+    display: none;
+  }
+
+  /* ---------- User ------------*/
+
+  .user {
+    margin-top: var(--huge-size);
+  }
+
+  /* ---------- MAIN -----------*/
+
+  .main {
+    padding-top: var(--huge-size);
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: var(--huge-size);
+
+    width: 100%;
+  }
+
+  .main__title {
+    text-align: right;
+  }
+
+  /* ---------- Customers -----------*/
+
+  .customers {
+    margin-top: var(--huge-size);
+
+    padding-top: var(--huge-size);
+    padding-left: var(--huge-size);
+    padding-right: var(--huge-size);
+    padding-bottom: var(--huge-size);
+
+    width: 100%;
+  }
+
+  /* ---------- Heading -----------*/
+
+  .customers__heading-box {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--normal-size);
+  }
+
+  /* ---------- Search -----------*/
+
+  .customers__search-box {
+    width: 100%;
+  }
+
+  .customers__table-box {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  /* ---------- Table -----------*/
+
+  .table {
+    margin-top: var(--huge-size);
+    width: 890px;
+  }
+
+  .pagination {
+    padding-top: var(--huge-size);
+
+    flex-direction: column;
+    gap: var(--huge-size);
+  }
+
+  .pagination__box,
+  .pagination__pages {
+    gap: var(--small-size);
+  }
 }

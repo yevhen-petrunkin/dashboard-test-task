@@ -25,7 +25,11 @@
         <nav class="header__nav nav">
           <ul class="nav__btn-list list">
             <li>
-              <button class="nav__btn" type="button">
+              <button
+                class="nav__btn"
+                type="button"
+                aria-label="Go to Dashboard"
+              >
                 <svg class="nav__btn-icon icon" width="24" height="24">
                   <use href="./assets/icons/icons.svg#key"></use>
                 </svg>
@@ -35,7 +39,11 @@
             </li>
 
             <li>
-              <button class="nav__btn" type="button">
+              <button
+                class="nav__btn"
+                type="button"
+                aria-label="Go to Product Page"
+              >
                 <svg class="nav__btn-icon icon" width="24" height="24">
                   <use href="./assets/icons/icons.svg#cube"></use>
                 </svg>
@@ -50,7 +58,11 @@
             </li>
 
             <li>
-              <button class="nav__btn active" type="button">
+              <button
+                class="nav__btn active"
+                type="button"
+                aria-label="Go to Customers Page"
+              >
                 <svg class="nav__btn-icon icon" width="24" height="24">
                   <use href="./assets/icons/icons.svg#user"></use>
                 </svg>
@@ -65,7 +77,11 @@
             </li>
 
             <li>
-              <button class="nav__btn" type="button">
+              <button
+                class="nav__btn"
+                type="button"
+                aria-label="Go to Income Page"
+              >
                 <svg class="nav__btn-icon icon" width="24" height="24">
                   <use href="./assets/icons/icons.svg#wallet"></use>
                 </svg>
@@ -80,7 +96,11 @@
             </li>
 
             <li>
-              <button class="nav__btn" type="button">
+              <button
+                class="nav__btn"
+                type="button"
+                aria-label="Go to Promote Page"
+              >
                 <svg class="nav__btn-icon icon" width="24" height="24">
                   <use href="./assets/icons/icons.svg#discount"></use>
                 </svg>
@@ -95,7 +115,7 @@
             </li>
 
             <li>
-              <button class="nav__btn" type="button">
+              <button class="nav__btn" type="button" aria-label="Get Help">
                 <svg class="nav__btn-icon icon" width="24" height="24">
                   <use href="./assets/icons/icons.svg#message"></use>
                 </svg>
@@ -163,122 +183,124 @@
 
           <!-- TABLE -->
 
-          <table class="customers__table table">
-            <!-- TABLE HEAD -->
+          <div class="customers__table-box">
+            <table class="customers__table table">
+              <!-- TABLE HEAD -->
 
-            <thead>
-              <tr>
-                <th>Customer Name</th>
-                <th>Company</th>
-                <th>Phone Number</th>
-                <th>Email</th>
-                <th>Country</th>
-                <th>Status</th>
-              </tr>
-            </thead>
+              <thead>
+                <tr>
+                  <th scope="col">Customer Name</th>
+                  <th scope="col">Company</th>
+                  <th scope="col">Phone Number</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Country</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
 
-            <!-- TABLE BODY -->
+              <!-- TABLE BODY -->
 
-            <tbody>
-              <tr>
-                <td>Jane Cooper</td>
-                <td>Microsoft</td>
-                <td>(225) 555-0118</td>
-                <td>jane@microsoft.com</td>
-                <td>United States</td>
-                <td>
-                  <button type="button" class="table__btn active">
-                    Active
-                  </button>
-                </td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td>Jane Cooper</td>
+                  <td>Microsoft</td>
+                  <td>(225) 555-0118</td>
+                  <td>jane@microsoft.com</td>
+                  <td>United States</td>
+                  <td>
+                    <button type="button" class="table__btn active">
+                      Active
+                    </button>
+                  </td>
+                </tr>
 
-              <tr>
-                <td>Jane Cooper</td>
-                <td>Microsoft</td>
-                <td>(225) 555-0118</td>
-                <td>jane@microsoft.com</td>
-                <td>United States</td>
-                <td>
-                  <button type="button" class="table__btn">Inactive</button>
-                </td>
-              </tr>
+                <tr>
+                  <td>Jane Cooper</td>
+                  <td>Microsoft</td>
+                  <td>(225) 555-0118</td>
+                  <td>jane@microsoft.com</td>
+                  <td>United States</td>
+                  <td>
+                    <button type="button" class="table__btn">Inactive</button>
+                  </td>
+                </tr>
 
-              <tr>
-                <td>Jane Cooper</td>
-                <td>Microsoft</td>
-                <td>(225) 555-0118</td>
-                <td>jane@microsoft.com</td>
-                <td>United States</td>
-                <td>
-                  <button type="button" class="table__btn">Inactive</button>
-                </td>
-              </tr>
+                <tr>
+                  <td>Jane Cooper</td>
+                  <td>Microsoft</td>
+                  <td>(225) 555-0118</td>
+                  <td>jane@microsoft.com</td>
+                  <td>United States</td>
+                  <td>
+                    <button type="button" class="table__btn">Inactive</button>
+                  </td>
+                </tr>
 
-              <tr>
-                <td>Jane Cooper</td>
-                <td>Microsoft</td>
-                <td>(225) 555-0118</td>
-                <td>jane@microsoft.com</td>
-                <td>United States</td>
-                <td>
-                  <button type="button" class="table__btn active">
-                    Active
-                  </button>
-                </td>
-              </tr>
+                <tr>
+                  <td>Jane Cooper</td>
+                  <td>Microsoft</td>
+                  <td>(225) 555-0118</td>
+                  <td>jane@microsoft.com</td>
+                  <td>United States</td>
+                  <td>
+                    <button type="button" class="table__btn active">
+                      Active
+                    </button>
+                  </td>
+                </tr>
 
-              <tr>
-                <td>Jane Cooper</td>
-                <td>Microsoft</td>
-                <td>(225) 555-0118</td>
-                <td>jane@microsoft.com</td>
-                <td>United States</td>
-                <td>
-                  <button type="button" class="table__btn active">
-                    Active
-                  </button>
-                </td>
-              </tr>
+                <tr>
+                  <td>Jane Cooper</td>
+                  <td>Microsoft</td>
+                  <td>(225) 555-0118</td>
+                  <td>jane@microsoft.com</td>
+                  <td>United States</td>
+                  <td>
+                    <button type="button" class="table__btn active">
+                      Active
+                    </button>
+                  </td>
+                </tr>
 
-              <tr>
-                <td>Jane Cooper</td>
-                <td>Microsoft</td>
-                <td>(225) 555-0118</td>
-                <td>jane@microsoft.com</td>
-                <td>United States</td>
-                <td>
-                  <button type="button" class="table__btn active">
-                    Active
-                  </button>
-                </td>
-              </tr>
+                <tr>
+                  <td>Jane Cooper</td>
+                  <td>Microsoft</td>
+                  <td>(225) 555-0118</td>
+                  <td>jane@microsoft.com</td>
+                  <td>United States</td>
+                  <td>
+                    <button type="button" class="table__btn active">
+                      Active
+                    </button>
+                  </td>
+                </tr>
 
-              <tr>
-                <td>Jane Cooper</td>
-                <td>Microsoft</td>
-                <td>(225) 555-0118</td>
-                <td>jane@microsoft.com</td>
-                <td>United States</td>
-                <td>
-                  <button type="button" class="table__btn active">
-                    Active
-                  </button>
-                </td>
-              </tr>
+                <tr>
+                  <td>Jane Cooper</td>
+                  <td>Microsoft</td>
+                  <td>(225) 555-0118</td>
+                  <td>jane@microsoft.com</td>
+                  <td>United States</td>
+                  <td>
+                    <button type="button" class="table__btn active">
+                      Active
+                    </button>
+                  </td>
+                </tr>
 
-              <tr>
-                <td>Jane Cooper</td>
-                <td>Microsoft</td>
-                <td>(225) 555-0118</td>
-                <td>jane@microsoft.com</td>
-                <td>United States</td>
-                <td>
-                  <button type="button" class="table__btn">Inactive</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                <tr>
+                  <td>Jane Cooper</td>
+                  <td>Microsoft</td>
+                  <td>(225) 555-0118</td>
+                  <td>jane@microsoft.com</td>
+                  <td>United States</td>
+                  <td>
+                    <button type="button" class="table__btn">Inactive</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
           <!-- PAGINATION -->
 
@@ -288,30 +310,75 @@
             </p>
 
             <div class="pagination__box">
-              <button class="pagination__btn" type="button">&lt;</button>
+              <button
+                class="pagination__btn"
+                type="button"
+                aria-label="Go to Previous Page"
+              >
+                &lt;
+              </button>
 
               <ul class="pagination__pages list">
                 <li>
-                  <button class="pagination__btn active" type="button">
+                  <button
+                    class="pagination__btn active"
+                    type="button"
+                    aria-label="Choose page by number"
+                  >
                     1
                   </button>
                 </li>
+
                 <li>
-                  <button class="pagination__btn" type="button">2</button>
+                  <button
+                    class="pagination__btn"
+                    type="button"
+                    aria-label="Choose page by number"
+                  >
+                    2
+                  </button>
                 </li>
+
                 <li>
-                  <button class="pagination__btn" type="button">3</button>
+                  <button
+                    class="pagination__btn"
+                    type="button"
+                    aria-label="Choose page by number"
+                  >
+                    3
+                  </button>
                 </li>
+
                 <li>
-                  <button class="pagination__btn" type="button">4</button>
+                  <button
+                    class="pagination__btn"
+                    type="button"
+                    aria-label="Choose page by number"
+                  >
+                    4
+                  </button>
                 </li>
+
                 <li class="pagination__range">...</li>
+
                 <li>
-                  <button class="pagination__btn" type="button">40</button>
+                  <button
+                    class="pagination__btn"
+                    type="button"
+                    aria-label="Choose page by number"
+                  >
+                    40
+                  </button>
                 </li>
               </ul>
 
-              <button class="pagination__btn" type="button">&gt;</button>
+              <button
+                class="pagination__btn"
+                type="button"
+                aria-label="Go to Next Page"
+              >
+                &gt;
+              </button>
             </div>
           </section>
         </section>
