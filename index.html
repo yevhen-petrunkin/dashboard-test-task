@@ -6,5 +6,309 @@
     <title>Dashboard Test</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+
+      <header class="header">
+        <!-- LOGO -->
+
+        <div class="header__logo logo">
+          <svg class="logo__icon" width="37" height="37">
+            <use href="./assets/icons/icons.svg#logo"></use>
+          </svg>
+          <p class="logo__name">Dashboard <span>v.01</span></p>
+        </div>
+
+        <!-- NAVBAR -->
+
+        <nav class="header__menu">
+          <ul class="header__btn-list list">
+            <li>
+              <button class="header__btn" type="button">
+                <svg class="header__btn-icon" width="24" height="24">
+                  <use href="./assets/icons/icons.svg#key"></use>
+                </svg>
+
+                <span>Dashboard</span>
+              </button>
+            </li>
+
+            <li>
+              <button class="header__btn" type="button">
+                <svg class="header__btn-icon" width="24" height="24">
+                  <use href="./assets/icons/icons.svg#cube"></use>
+                </svg>
+
+                <span>
+                  Product
+                  <svg class="header__btn-arrow" width="16" height="16">
+                    <use href="./assets/icons/icons.svg#arrow-right"></use>
+                  </svg>
+                </span>
+              </button>
+            </li>
+
+            <li>
+              <button class="header__btn active" type="button">
+                <svg class="header__btn-icon" width="24" height="24">
+                  <use href="./assets/icons/icons.svg#user"></use>
+                </svg>
+
+                <span>
+                  Customers
+                  <svg class="header__btn-arrow" width="16" height="16">
+                    <use href="./assets/icons/icons.svg#arrow-right"></use>
+                  </svg>
+                </span>
+              </button>
+            </li>
+
+            <li>
+              <button class="header__btn" type="button">
+                <svg class="header__btn-icon" width="24" height="24">
+                  <use href="./assets/icons/icons.svg#wallet"></use>
+                </svg>
+
+                <span>
+                  Income
+                  <svg class="header__btn-arrow" width="16" height="16">
+                    <use href="./assets/icons/icons.svg#arrow-right"></use>
+                  </svg>
+                </span>
+              </button>
+            </li>
+
+            <li>
+              <button class="header__btn" type="button">
+                <svg class="header__btn-icon" width="24" height="24">
+                  <use href="./assets/icons/icons.svg#discount"></use>
+                </svg>
+
+                <span>
+                  Promote
+                  <svg class="header__btn-arrow" width="16" height="16">
+                    <use href="./assets/icons/icons.svg#arrow-right"></use>
+                  </svg>
+                </span>
+              </button>
+            </li>
+
+            <li>
+              <button class="header__btn" type="button">
+                <svg class="header__btn-icon" width="24" height="24">
+                  <use href="./assets/icons/icons.svg#message"></use>
+                </svg>
+
+                <span>
+                  Help
+                  <svg class="header__btn-arrow" width="16" height="16">
+                    <use href="./assets/icons/icons.svg#arrow-right"></use>
+                  </svg>
+                </span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- USER -->
+
+        <div class="header__user user">
+          <img src="./assets//images/manager.png" alt="User Avatar" />
+          <div class="user__box">
+            <p class="user__name">Evano</p>
+            <p class="user__position">Project Manager</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- MAIN -->
+
+      <main class="main">
+        <h1 class="main__title">Hello Evano 👋🏼,</h1>
+
+        <!-- CUSTOMERS -->
+
+        <section class="main__customers customers">
+          <!-- HEADING -->
+
+          <div class="customers__heading-box">
+            <!-- TITLE -->
+
+            <div class="customers__title-box">
+              <h2 class="customers__title">All Customers</h2>
+              <button type="button" class="customers__filter">
+                Active Members
+              </button>
+            </div>
+
+            <!-- SEARCH -->
+
+            <div class="customers__search-box">
+              <input
+                class="customers__search"
+                type="search"
+                name="search"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+
+          <!-- TABLE -->
+
+          <table class="customers__table table">
+            <!-- TABLE HEAD -->
+
+            <thead>
+              <tr>
+                <th>Customer Name</th>
+                <th>Company</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+
+            <!-- TABLE BODY -->
+
+            <tbody>
+              <tr>
+                <td>Jane Cooper</td>
+                <td>Microsoft</td>
+                <td>(225) 555-0118</td>
+                <td>jane@microsoft.com</td>
+                <td>United States</td>
+                <td>
+                  <button type="button" class="table__btn active">
+                    Active
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Jane Cooper</td>
+                <td>Microsoft</td>
+                <td>(225) 555-0118</td>
+                <td>jane@microsoft.com</td>
+                <td>United States</td>
+                <td>
+                  <button type="button" class="table__btn">Inactive</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Jane Cooper</td>
+                <td>Microsoft</td>
+                <td>(225) 555-0118</td>
+                <td>jane@microsoft.com</td>
+                <td>United States</td>
+                <td>
+                  <button type="button" class="table__btn">Inactive</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Jane Cooper</td>
+                <td>Microsoft</td>
+                <td>(225) 555-0118</td>
+                <td>jane@microsoft.com</td>
+                <td>United States</td>
+                <td>
+                  <button type="button" class="table__btn active">
+                    Active
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Jane Cooper</td>
+                <td>Microsoft</td>
+                <td>(225) 555-0118</td>
+                <td>jane@microsoft.com</td>
+                <td>United States</td>
+                <td>
+                  <button type="button" class="table__btn active">
+                    Active
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Jane Cooper</td>
+                <td>Microsoft</td>
+                <td>(225) 555-0118</td>
+                <td>jane@microsoft.com</td>
+                <td>United States</td>
+                <td>
+                  <button type="button" class="table__btn active">
+                    Active
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Jane Cooper</td>
+                <td>Microsoft</td>
+                <td>(225) 555-0118</td>
+                <td>jane@microsoft.com</td>
+                <td>United States</td>
+                <td>
+                  <button type="button" class="table__btn active">
+                    Active
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Jane Cooper</td>
+                <td>Microsoft</td>
+                <td>(225) 555-0118</td>
+                <td>jane@microsoft.com</td>
+                <td>United States</td>
+                <td>
+                  <button type="button" class="table__btn">Active</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- PAGINATION -->
+
+          <section class="pagination">
+            <p class="pagination__info">
+              Showing data 1 to 8 of <span>256K</span> entries
+            </p>
+
+            <div class="pagination__box">
+              <button class="pagination__btn" type="button">&lt;</button>
+
+              <ul class="pagination__pages list">
+                <li>
+                  <button class="pagination__btn active" type="button">
+                    1
+                  </button>
+                </li>
+                <li>
+                  <button class="pagination__btn" type="button">2</button>
+                </li>
+                <li>
+                  <button class="pagination__btn" type="button">3</button>
+                </li>
+                <li>
+                  <button class="pagination__btn" type="button">4</button>
+                </li>
+                <li class="pagination__range">...</li>
+                <li>
+                  <button class="pagination__btn" type="button">40</button>
+                </li>
+              </ul>
+
+              <button class="pagination__btn" type="button">&gt;</button>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
