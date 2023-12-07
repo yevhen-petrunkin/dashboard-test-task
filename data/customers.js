@@ -65,3 +65,5 @@ const customers = [
     active: false,
   },
 ];
+
+export default customers;

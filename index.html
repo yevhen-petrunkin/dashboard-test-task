@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Dashboard Test</title>
+
     <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./data/customers.js"></script>
+    <script type="module" src="./index.js"></script>
   </head>
+
   <body>
     <div class="container">
       <!-- HEADER -->
@@ -135,12 +140,7 @@
 
         <div class="header__user user">
           <div class="user__img-box">
-            <img
-              src="./assets//images/manager.png"
-              alt="User Avatar"
-              width="100%"
-              height="100%"
-            />
+            <img src="./assets//images/manager.png" alt="User Avatar" />
           </div>
           <div class="user__box">
             <p class="user__name">Evano</p>
@@ -200,111 +200,15 @@
 
               <!-- TABLE BODY -->
 
-              <tbody>
-                <tr>
-                  <td>Jane Cooper</td>
-                  <td>Microsoft</td>
-                  <td>(225) 555-0118</td>
-                  <td>jane@microsoft.com</td>
-                  <td>United States</td>
-                  <td>
-                    <button type="button" class="table__btn active">
-                      Active
-                    </button>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>Jane Cooper</td>
-                  <td>Microsoft</td>
-                  <td>(225) 555-0118</td>
-                  <td>jane@microsoft.com</td>
-                  <td>United States</td>
-                  <td>
-                    <button type="button" class="table__btn">Inactive</button>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>Jane Cooper</td>
-                  <td>Microsoft</td>
-                  <td>(225) 555-0118</td>
-                  <td>jane@microsoft.com</td>
-                  <td>United States</td>
-                  <td>
-                    <button type="button" class="table__btn">Inactive</button>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>Jane Cooper</td>
-                  <td>Microsoft</td>
-                  <td>(225) 555-0118</td>
-                  <td>jane@microsoft.com</td>
-                  <td>United States</td>
-                  <td>
-                    <button type="button" class="table__btn active">
-                      Active
-                    </button>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>Jane Cooper</td>
-                  <td>Microsoft</td>
-                  <td>(225) 555-0118</td>
-                  <td>jane@microsoft.com</td>
-                  <td>United States</td>
-                  <td>
-                    <button type="button" class="table__btn active">
-                      Active
-                    </button>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>Jane Cooper</td>
-                  <td>Microsoft</td>
-                  <td>(225) 555-0118</td>
-                  <td>jane@microsoft.com</td>
-                  <td>United States</td>
-                  <td>
-                    <button type="button" class="table__btn active">
-                      Active
-                    </button>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>Jane Cooper</td>
-                  <td>Microsoft</td>
-                  <td>(225) 555-0118</td>
-                  <td>jane@microsoft.com</td>
-                  <td>United States</td>
-                  <td>
-                    <button type="button" class="table__btn active">
-                      Active
-                    </button>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>Jane Cooper</td>
-                  <td>Microsoft</td>
-                  <td>(225) 555-0118</td>
-                  <td>jane@microsoft.com</td>
-                  <td>United States</td>
-                  <td>
-                    <button type="button" class="table__btn">Inactive</button>
-                  </td>
-                </tr>
-              </tbody>
+              <tbody></tbody>
             </table>
           </div>
 
           <!-- PAGINATION -->
 
           <section class="pagination">
+            <h3 class="pagination__title visually-hidden">Choose Page</h3>
+
             <p class="pagination__info">
               Showing data 1 to 8 of <span>256K</span> entries
             </p>
